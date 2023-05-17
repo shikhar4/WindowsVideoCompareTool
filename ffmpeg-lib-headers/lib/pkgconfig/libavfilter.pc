@@ -1,0 +1,14 @@
+prefix=/cygdrive/c/Tools/vcpkg/packages/ffmpeg_x64-windows
+exec_prefix=${prefix}
+libdir=/cygdrive/c/Tools/vcpkg/packages/ffmpeg_x64-windows/lib
+includedir=/cygdrive/c/Tools/vcpkg/packages/ffmpeg_x64-windows/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 7.92.100
+Requires: 
+Requires.private: libswscale >= 5.8.100, libavformat >= 58.65.100, libavcodec >= 58.115.101, libswresample >= 3.8.100, libavutil >= 56.62.100
+Conflicts:
+Libs: -L${libdir}  -lavfilter 
+Libs.private: 
+Cflags: -I${includedir}

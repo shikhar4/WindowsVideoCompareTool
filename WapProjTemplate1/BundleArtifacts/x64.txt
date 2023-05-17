@@ -1,0 +1,2 @@
+MainPackage=C:\Users\14087\Desktop\WindowsApp\VisualVideoCompareTool\WapProjTemplate1\bin\x64\Release\RCT_1.0.14.0_x64.msix
+SymbolPackage=C:\Users\14087\Desktop\WindowsApp\VisualVideoCompareTool\WapProjTemplate1\obj\x64\Release\Symbols\RCT_1.0.14.0_x64.appxsym

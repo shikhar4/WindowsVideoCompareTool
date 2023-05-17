@@ -1,0 +1,14 @@
+prefix=/cygdrive/c/Tools/vcpkg/packages/ffmpeg_x64-windows
+exec_prefix=${prefix}
+libdir=/cygdrive/c/Tools/vcpkg/packages/ffmpeg_x64-windows/lib
+includedir=/cygdrive/c/Tools/vcpkg/packages/ffmpeg_x64-windows/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.62.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: user32.lib bcrypt.lib
+Cflags: -I${includedir}

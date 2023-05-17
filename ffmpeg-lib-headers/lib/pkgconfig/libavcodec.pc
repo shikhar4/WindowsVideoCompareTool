@@ -1,0 +1,14 @@
+prefix=/cygdrive/c/Tools/vcpkg/packages/ffmpeg_x64-windows
+exec_prefix=${prefix}
+libdir=/cygdrive/c/Tools/vcpkg/packages/ffmpeg_x64-windows/lib
+includedir=/cygdrive/c/Tools/vcpkg/packages/ffmpeg_x64-windows/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.115.101
+Requires: 
+Requires.private: libswresample >= 3.8.100, libavutil >= 56.62.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: vpxmd.lib vpxmd.lib vpxmd.lib vpxmd.lib -libpath:/cygdrive/c/Tools/vcpkg/installed/x64-windows/lib/pkgconfig/../../lib opus.lib mfplat.lib mfuuid.lib ole32.lib strmiids.lib ole32.lib user32.lib
+Cflags: -I${includedir}

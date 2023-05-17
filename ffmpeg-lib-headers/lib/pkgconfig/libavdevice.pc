@@ -1,0 +1,14 @@
+prefix=/cygdrive/c/Tools/vcpkg/packages/ffmpeg_x64-windows
+exec_prefix=${prefix}
+libdir=/cygdrive/c/Tools/vcpkg/packages/ffmpeg_x64-windows/lib
+includedir=/cygdrive/c/Tools/vcpkg/packages/ffmpeg_x64-windows/include
+
+Name: libavdevice
+Description: FFmpeg device handling library
+Version: 58.11.103
+Requires: 
+Requires.private: libavfilter >= 7.92.100, libswscale >= 5.8.100, libavformat >= 58.65.100, libavcodec >= 58.115.101, libswresample >= 3.8.100, libavutil >= 56.62.100
+Conflicts:
+Libs: -L${libdir}  -lavdevice 
+Libs.private: psapi.lib ole32.lib strmiids.lib uuid.lib oleaut32.lib shlwapi.lib gdi32.lib vfw32.lib
+Cflags: -I${includedir}

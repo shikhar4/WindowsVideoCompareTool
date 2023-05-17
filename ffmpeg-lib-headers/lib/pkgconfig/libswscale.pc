@@ -1,0 +1,14 @@
+prefix=/cygdrive/c/Tools/vcpkg/packages/ffmpeg_x64-windows
+exec_prefix=${prefix}
+libdir=/cygdrive/c/Tools/vcpkg/packages/ffmpeg_x64-windows/lib
+includedir=/cygdrive/c/Tools/vcpkg/packages/ffmpeg_x64-windows/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 5.8.100
+Requires: 
+Requires.private: libavutil >= 56.62.100
+Conflicts:
+Libs: -L${libdir}  -lswscale 
+Libs.private: 
+Cflags: -I${includedir}
